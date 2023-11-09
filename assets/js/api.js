@@ -95,7 +95,7 @@ const updateNote = async (id, note) => {
 
 //  Fonction Refresh
 
-/* 
+
 const displayNotes = async () => {
   const notes = await getNotes();
   ul.innerHTML = "";
@@ -155,8 +155,8 @@ form.onsubmit = event => {
   if (noteName) {
     createNote(noteName);
   }
-}; */
-/* 
+};
+
 window.onload = () => {
   displayNotes();
-}; */
+}; 
