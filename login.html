@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <div class="app">
+
+        <form action="" id="login" method="post">
+
+            <h1>CONNEXION</h1>
+
+            <div class="form-row flex">
+
+                <input type="text" pattern="^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$" class="flex-1" name="email" placeholder="Your email">
+               
+
+            </div>
+           
+            <div class="error" id="error-email"></div>
+
+            <div class="form-row flex relative">
+
+                <input type="text" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,20}$" class="flex-1" name="password" placeholder="Your Password">
+                
+                <i class="fa-solid icon-password  fa-eye-slash absolute"></i>
+
+            </div>
+
+            <div class="error" id="error-password"></div>
+
+            <div class="form-row flex">
+               
+                <button class="submit flex-1" disabled>S'inscrire</button>
+                   
+   
+               </div>
+
+               <div class="form-row">
+
+                <p class="form-info">
+        
+                    vous avez deja un compte si non <a href="/register.html"> cliquez ici </a> pour vous inscrire.
+                </p>
+           
+            </div>
+
+
+
+   
+
+        </form>
+    </div>
+    <noscript>javascript est pas activé sur votre ordinateur merci de l'activé dans lees paramètres de votre de votre navigateur</noscript>
+    <script src="/assets/js/function/listeners.js"></script>
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
